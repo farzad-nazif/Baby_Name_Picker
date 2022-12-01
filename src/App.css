@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  background-color: rgb(195, 222, 231);
+  margin: 5rem;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: rgb(255, 206, 214);
+  border-width: 1.2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+/* Search Bar */
+#searchBar {
+  margin: 3rem;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+}
+#searchBox {
+  width: 100%;
+  height: 150%;
+  justify-self: center;
+  align-self: center;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: rgb(255, 157, 173);
+  border-width: 0.3rem;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+#searchBar div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#allBtn {
+  border-style: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#allBtn:hover {
+  cursor: pointer;
+  background-color: rgb(173, 173, 173);
+}
+#girlsBtn {
+  background-color: crimson;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#girlsBtn:hover {
+  cursor: pointer;
+  background-color: rgb(242, 187, 187);
+}
+#boysBtn {
+  background-color: lightblue;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#boysBtn:hover {
+  cursor: pointer;
+  background-color: rgb(177, 246, 255);
+}
+
+/* Favourits Section */
+.favouritSection {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.favouritSection p {
+  padding: 1.5rem;
+}
+#favouritTxt {
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(46, 46, 46);
+}
+#clickFavMsg {
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(99, 99, 99);
+
+  margin-bottom: 1rem;
+}
+.favNames {
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(99, 99, 99);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+#favListReset {
+  background-color: rgb(39, 160, 65);
   color: white;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+#favListReset:hover {
+  cursor: pointer;
+  background-color: rgb(78, 177, 100);
 }
 
-.App-link {
-  color: #61dafb;
+/* Names Section */
+#namesBox {
+  display: grid;
+  gap: 1rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-rows: repeat(auto-fill, 100px);
+  border-style: dashed;
+  border-color: red;
+  margin: 1.5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#namesBox p {
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+}
+.maleName {
+  background-color: rgb(68, 136, 159);
+  color: white;
+  border-style: none;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.maleName:hover {
+  cursor: pointer;
+  background-color: rgb(89, 142, 160);
+}
+.femaleName {
+  background-color: rgb(254, 51, 51);
+  color: white;
+  border-style: none;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.femaleName:hover {
+  cursor: pointer;
+  background-color: rgb(250, 88, 88);
 }
